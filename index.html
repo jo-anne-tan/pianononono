@@ -5,21 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pianononono </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    </style> 
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
-    <img src="./images/concert.jpg" alt="concert audience" class="background-photo">
+    <img src="./images/galaxy.jpg" alt="concert audience" class="background-photo">
     <!-- photo credit -->
     <span class="photo-credit">Photo by 
-        <a href="https://unsplash.com/@nainoa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-            Nainoa Shizuru
-        </a>
-         on 
-         <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        <a href="https://unsplash.com/@krisroller?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+            Kristopher Roller
+        </a> on 
+        <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
             Unsplash
         </a>
     </span>
+    <!-- Audio credit -->
+    <span class="audio-credit">Piano sounds by
+        <a href="https://freesound.org/people/Tesabob2001/">
+            Tesabob2001
+        </a>
+        at 
+        <a href="https://freesound.org/people/Tesabob2001/packs/12995/">
+            freesound.org
+        </a>
+    </span>
     <div class="keyboard">
+        <!-- dummy keys -->
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+
+        <div class="white-key"></div>
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+        <div class="white-key"></div>
+        <!-- dummy keys end -->
         <div class="white-key" id="C3">
             <a class="white-key">Q</a>
             <p class="key">C3</p>
@@ -44,6 +77,7 @@
             <a class="white-key">R</a>
             <p class="key">F3</p> 
             <div class="black-key" id="F3#">
+                <a class="black-key">5</a>
                 <p class="black-key">F3#</p>
             </div>
         </div>
@@ -51,6 +85,7 @@
             <a class="white-key">T</a>
             <p class="key">G3</p> 
             <div class="black-key" id="G3#">
+                <a class="black-key">6</a>
                 <p class="black-key">G3#</p>
             </div>
         </div>
@@ -58,6 +93,7 @@
             <a class="white-key">Y</a>
             <p class="key">A3</p> 
             <div class="black-key" id="A3#">
+                <a class="black-key">7</a>
                 <p class="black-key">A3#</p>
             </div>
         </div>
@@ -69,6 +105,7 @@
             <a class="white-key">I</a>
             <p class="key">C4</p> 
             <div class="black-key" id="C4#">
+                <a class="black-key">9</a>
                 <p class="black-key">C4#</p>
             </div>
         </div>
@@ -76,6 +113,7 @@
             <a class="white-key">O</a>
             <p class="key">D4</p> 
             <div class="black-key" id="D4#">
+                <a class="black-key">0</a>
                 <p class="black-key" >D4#</p>
             </div>
         </div>
@@ -87,6 +125,7 @@
             <a class="white-key">Z</a>
             <p class="key">F4</p> 
             <div class="black-key" id="F4#">
+                <a class="black-key">S</a>
                 <p class="black-key">F4#</p>
             </div>
         </div>
@@ -94,6 +133,7 @@
             <a class="white-key">X</a>
             <p class="key">G4</p> 
             <div class="black-key" id="G4#">
+                <a class="black-key">D</a>
                 <p class="black-key">G4#</p>
             </div>
         </div>
@@ -101,6 +141,7 @@
             <a class="white-key">C</a>
             <p class="key">A4</p> 
             <div class="black-key" id="A4#">
+                <a class="black-key">F</a>
                 <p class="black-key">A4#</p>
             </div>
         </div>
@@ -112,6 +153,7 @@
             <a class="white-key">B</a>
             <p class="key">C5</p> 
             <div class="black-key" id="C5#">
+                <a class="black-key">H</a>
                 <p class="black-key">C5#</p>
             </div>
         </div>
@@ -119,6 +161,7 @@
             <a class="white-key">N</a>
             <p class="key">D5</p> 
             <div class="black-key" id="D5#">
+                <a class="black-key">J</a>
                 <p class="black-key">D5#</p>
             </div>
         </div>
@@ -130,6 +173,7 @@
             <a class="white-key">,</a>
             <p class="key">F5</p> 
             <div class="black-key" id="F5#">
+                <a class="black-key">L</a>
                 <p class="black-key">F5#</p>
             </div>
         </div>
@@ -137,6 +181,7 @@
             <a class="white-key">.</a>
             <p class="key">G5</p> 
             <div class="black-key" id="G5#">
+                <a class="black-key">;</a>
                 <p class="black-key">G5#</p>
             </div>
         </div>
@@ -144,6 +189,7 @@
             <a class="white-key">/</a>
             <p class="key">A5</p> 
             <div class="black-key" id="A5#">
+                <a class="black-key">'</a>
                 <p class="black-key">A5#</p>
             </div>
         </div>
@@ -153,6 +199,26 @@
         <div class="white-key" id="C6">
             <p class="key">C6</p>
         </div>
+        <!-- dummy keys -->
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+
+        <div class="white-key"></div>
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+        <div class="white-key">
+            <div class="black-key"></div>
+        </div>
+        <div class="white-key"></div>
+        <!-- dummy keys end -->
     </div>
     <script src="index.js"></script>
 </body>
