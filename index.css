@@ -3,6 +3,7 @@ body{
     height:100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 img.background-photo{
@@ -15,34 +16,43 @@ img.background-photo{
 span.photo-credit{
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+    left: 10px;
+}
+
+span.audio-credit{
+    display: block;
+    position: absolute;
+    bottom: 35px;
+    left: 10px;
 }
 
 div.keyboard{
     display: flex;
-    width: 80vw;
+    width: 100vw;
     height: 80vh;
     margin: auto;
-    padding-top: 20vh;
+    padding-top: 55vh;
 }
 
 div.white-key{
     height: 37.5%;
     width: 4%;
     border: rgb(68, 68, 68) solid 2px;
-    border-radius: 2px;
+    border-radius: 5px;
     position: relative;
     background-color: white;
     transition: 1s;
 }
 
-.white-hover{
+.white-pressed{
     
 }
 
 div.black-key{
     height: 50%;
     width: 50%;
+    border-radius: 5px;
     background-color: black;
     position: absolute;
     right: -10px;
@@ -50,7 +60,7 @@ div.black-key{
 }
 
 a.white-key{
-    font-size: 20px;
+    font-size: 18px;
     position: absolute;
     top : 30px;
     left: 12px;
@@ -58,17 +68,17 @@ a.white-key{
 
 a.black-key{
     color: white;
-    font-size: 20px;
+    font-size: 12px;
     position: absolute;
     top : 10px;
-    left: 8px;
+    left: 6px;
 
 }
 
 p.key{
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
-    bottom: -60px;
+    bottom: -50px;
     left: 15px;
 }
 
