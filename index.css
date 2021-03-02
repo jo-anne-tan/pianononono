@@ -13,66 +13,85 @@ img.background-photo{
     position: absolute;
 }
 
-span.photo-credit{
-    display: block;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+div.msg-box-top{
+    position:absolute;
+    top: 20px;
+    left: 33vw;
 }
 
-span.audio-credit{
+div.msg-box-bottom{
+    position:absolute;
+    bottom: 20px;
+    left: 35vw;
+}
+
+a{
+    text-decoration: none;
+    color: pink;
+}
+
+a:hover{
+    transform: skewX(200);
+    color: rgb(139, 255, 255);
+}
+
+span{
+    color: white;
+}
+
+span.message{
     display: block;
-    position: absolute;
-    bottom: 35px;
-    left: 10px;
+    text-align: center;
 }
 
 div.keyboard{
     display: flex;
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 15vw;
     margin: auto;
     padding-top: 55vh;
 }
 
 div.white-key{
-    height: 37.5%;
+    height: 100%;
     width: 4%;
     border: rgb(68, 68, 68) solid 2px;
     border-radius: 5px;
     position: relative;
     background-color: white;
-    transition: 1s;
-}
-
-.white-pressed{
-    
+    transition: 0.2s;
 }
 
 div.black-key{
     height: 50%;
     width: 50%;
+    min-width: 20px;
     border-radius: 5px;
     background-color: black;
     position: absolute;
     right: -10px;
     top: 0;
+    transition: 0.2s;
+}
+
+.playing{
+    background-color: rgb(77, 127, 255) !important;
 }
 
 a.white-key{
-    font-size: 18px;
+    color: black;
+    font-size: 24px;
     position: absolute;
-    top : 30px;
-    left: 12px;
+    top : 20px;
+    left: 10px;
 }
 
 a.black-key{
     color: white;
-    font-size: 12px;
+    font-size: 18px;
     position: absolute;
     top : 10px;
-    left: 6px;
-
+    left: 4px;
 }
 
 p.key{
@@ -88,4 +107,3 @@ p.black-key{
     top: -40px;
     right: 0px;
 }
-
