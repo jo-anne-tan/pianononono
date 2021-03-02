@@ -13,25 +13,37 @@
 </head>
 <body>
     <img src="./images/galaxy.jpg" alt="concert audience" class="background-photo">
+    <div class="msg-box-top">
+        <span class="message"> ♡ For the best experience, please play this on Google Chrome ♡</span>
+        <span class="message"> ♡ Made with love by 
+            <a href="google.com" class="undecorated">
+            Jo-Anne Tan 
+            </a>♡
+        </span>
+    </div>
+
     <!-- photo credit -->
-    <span class="photo-credit">Photo by 
-        <a href="https://unsplash.com/@krisroller?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-            Kristopher Roller
-        </a> on 
-        <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-            Unsplash
-        </a>
-    </span>
-    <!-- Audio credit -->
-    <span class="audio-credit">Piano sounds by
-        <a href="https://freesound.org/people/Tesabob2001/">
-            Tesabob2001
-        </a>
-        at 
-        <a href="https://freesound.org/people/Tesabob2001/packs/12995/">
-            freesound.org
-        </a>
-    </span>
+    <div class="msg-box-bottom">
+        <span class="message">Photo by 
+            <a href="https://unsplash.com/@krisroller?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Kristopher Roller
+            </a> on 
+            <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Unsplash
+            </a>
+        </span>
+        <!-- Audio credit -->
+        <span class="message">Piano sounds by
+            <a href="https://freesound.org/people/Tesabob2001/">
+                Tesabob2001
+            </a>
+            at 
+            <a href="https://freesound.org/people/Tesabob2001/packs/12995/">
+                freesound.org
+            </a>
+        </span>
+    </div>
+
     <div class="keyboard">
         <!-- dummy keys -->
         <div class="white-key">
@@ -45,153 +57,149 @@
         </div>
         <div class="white-key"></div>
         <!-- dummy keys end -->
-        <div class="white-key" id="C3">
+        <div class="white-key" data-key="KeyQ">
             <a class="white-key">Q</a>
-            <p class="key">C3</p>
-            <div class="black-key" id="C3#">
+            <!-- <p class="key">C3</p> -->
+            <div class="black-key" data-key="Digit2">
                 <a class="black-key">2</a>
-                <p class="black-key">C3#</p>
+                <!-- <p class="black-key">C3#</p> -->
             </div>
         </div>
-        <div class="white-key" id="D3">
+        <div class="white-key" data-key="KeyW">
             <a class="white-key">W</a>
-            <p class="key">D3</p> 
-            <div class="black-key" id="D3#">
+            <!-- <p class="key">D3</p>  -->
+            <div class="black-key" data-key="Digit3">
                 <a class="black-key">3</a>
-                <p class="black-key">D3#</p>
+                <!-- <p class="black-key">D3#</p> -->
             </div>
         </div>
-        <div class="white-key" id="E3">
+        <div class="white-key" data-key="KeyE">
             <a class="white-key">E</a>
-            <p class="key">E3</p>
+            <!-- <p class="key">E3</p> -->
         </div>
-        <div class="white-key" id="F3">
+        <div class="white-key" data-key="KeyR">
             <a class="white-key">R</a>
-            <p class="key">F3</p> 
-            <div class="black-key" id="F3#">
+            <!-- <p class="key">F3</p>  -->
+            <div class="black-key" data-key="Digit5">
                 <a class="black-key">5</a>
-                <p class="black-key">F3#</p>
+                <!-- <p class="black-key">F3#</p> -->
             </div>
         </div>
-        <div class="white-key" id="G3">
+        <div class="white-key" data-key="KeyT">
             <a class="white-key">T</a>
-            <p class="key">G3</p> 
-            <div class="black-key" id="G3#">
+            <!-- <p class="key">G3</p>  -->
+            <div class="black-key" data-key="Digit6">
                 <a class="black-key">6</a>
-                <p class="black-key">G3#</p>
+                <!-- <p class="black-key">G3#</p> -->
             </div>
         </div>
-        <div class="white-key" id="A3">
+        <div class="white-key" data-key="KeyY">
             <a class="white-key">Y</a>
-            <p class="key">A3</p> 
-            <div class="black-key" id="A3#">
+            <!-- <p class="key">A3</p>  -->
+            <div class="black-key" data-key="Digit7">
                 <a class="black-key">7</a>
-                <p class="black-key">A3#</p>
+                <!-- <p class="black-key">A3#</p> -->
             </div>
         </div>
-        <div class="white-key" id="B3">
+        <div class="white-key" data-key="KeyU">
             <a class="white-key">U</a>
-            <p class="key">B3</p>
+            <!-- <p class="key">B3</p> -->
         </div>
-        <div class="white-key" id="C4">
+        <div class="white-key" data-key="KeyI">
             <a class="white-key">I</a>
-            <p class="key">C4</p> 
-            <div class="black-key" id="C4#">
+            <!-- <p class="key">C4</p>  -->
+            <div class="black-key" data-key="Digit9">
                 <a class="black-key">9</a>
-                <p class="black-key">C4#</p>
+                <!-- <p class="black-key">C4#</p> -->
             </div>
         </div>
-        <div class="white-key" id="D4">
+        <div class="white-key" data-key="KeyO">
             <a class="white-key">O</a>
-            <p class="key">D4</p> 
-            <div class="black-key" id="D4#">
+            <!-- <p class="key">D4</p>  -->
+            <div class="black-key" data-key="Digit0">
                 <a class="black-key">0</a>
-                <p class="black-key" >D4#</p>
+                <!-- <p class="black-key" >D4#</p> -->
             </div>
         </div>
-        <div class="white-key" id="E4">
+        <div class="white-key" data-key="KeyP">
             <a class="white-key">P</a>
-            <p class="key">E4</p>
+            <!-- <p class="key">E4</p> -->
         </div>
-        <div class="white-key" id="F4">
+        <div class="white-key" data-key="KeyZ">
             <a class="white-key">Z</a>
-            <p class="key">F4</p> 
-            <div class="black-key" id="F4#">
+            <!-- <p class="key">F4</p>  -->
+            <div class="black-key" data-key="KeyS">
                 <a class="black-key">S</a>
-                <p class="black-key">F4#</p>
+                <!-- <p class="black-key">F4#</p> -->
             </div>
         </div>
-        <div class="white-key" id="G4">
+        <div class="white-key" data-key="KeyX">
             <a class="white-key">X</a>
-            <p class="key">G4</p> 
-            <div class="black-key" id="G4#">
+            <!-- <p class="key">G4</p>  -->
+            <div class="black-key" data-key="KeyD">
                 <a class="black-key">D</a>
-                <p class="black-key">G4#</p>
+                <!-- <p class="black-key">G4#</p> -->
             </div>
         </div>
-        <div class="white-key" id="A4">
+        <div class="white-key" data-key="KeyC">
             <a class="white-key">C</a>
-            <p class="key">A4</p> 
-            <div class="black-key" id="A4#">
+            <!-- <p class="key">A4</p>  -->
+            <div class="black-key" data-key="KeyF">
                 <a class="black-key">F</a>
-                <p class="black-key">A4#</p>
+                <!-- <p class="black-key">A4#</p> -->
             </div>
         </div>
-        <div class="white-key" id="B4">
+        <div class="white-key" data-key="KeyV">
             <a class="white-key">V</a>
-            <p class="key">B4</p>
+            <!-- <p class="key">B4</p> -->
         </div>
-        <div class="white-key" id="C5">
+        <div class="white-key" data-key="KeyB">
             <a class="white-key">B</a>
-            <p class="key">C5</p> 
-            <div class="black-key" id="C5#">
+            <!-- <p class="key">C5</p>  -->
+            <div class="black-key" data-key="KeyH">
                 <a class="black-key">H</a>
-                <p class="black-key">C5#</p>
+                <!-- <p class="black-key">C5#</p> -->
             </div>
         </div>
-        <div class="white-key" id="D5">
+        <div class="white-key" data-key="KeyN">
             <a class="white-key">N</a>
-            <p class="key">D5</p> 
-            <div class="black-key" id="D5#">
+            <!-- <p class="key">D5</p>  -->
+            <div class="black-key" data-key="KeyJ">
                 <a class="black-key">J</a>
-                <p class="black-key">D5#</p>
+                <!-- <p class="black-key">D5#</p> -->
             </div>
         </div>
-        <div class="white-key" id="E5">
+        <div class="white-key" data-key="KeyM">
             <a class="white-key">M</a>
-            <p class="key">E5</p>
+            <!-- <p class="key">E5</p> -->
         </div>
-        <div class="white-key" id="F5">
+        <div class="white-key" data-key="Comma">
             <a class="white-key">,</a>
-            <p class="key">F5</p> 
-            <div class="black-key" id="F5#">
+            <!-- <p class="key">F5</p>  -->
+            <div class="black-key" data-key="KeyL">
                 <a class="black-key">L</a>
-                <p class="black-key">F5#</p>
+                <!-- <p class="black-key">F5#</p> -->
             </div>
         </div>
-        <div class="white-key" id="G5">
+        <div class="white-key" data-key="Period">
             <a class="white-key">.</a>
-            <p class="key">G5</p> 
-            <div class="black-key" id="G5#">
+            <!-- <p class="key">G5</p>  -->
+            <div class="black-key" data-key="Semicolon">
                 <a class="black-key">;</a>
-                <p class="black-key">G5#</p>
+                <!-- <p class="black-key">G5#</p> -->
             </div>
         </div>
-        <div class="white-key" id="A5">
+        <div class="white-key" data-key="Slash">
             <a class="white-key">/</a>
-            <p class="key">A5</p> 
-            <div class="black-key" id="A5#">
+            <!-- <p class="key">A5</p>  -->
+            <div class="black-key" data-key="Quote">
                 <a class="black-key">'</a>
-                <p class="black-key">A5#</p>
+                <!-- <p class="black-key">A5#</p> -->
             </div>
-        </div>
-        <div class="white-key" id="B5">
-            <!-- <p class="key">B5</p> -->
-        </div>
-        <div class="white-key" id="C6">
-            <!-- <p class="key">C6</p> -->
         </div>
         <!-- dummy keys -->
+        <div class="white-key"></div>
+        <div class="white-key"></div>
         <div class="white-key">
             <div class="black-key"></div>
         </div>
@@ -204,29 +212,43 @@
 
     <!-- audio files -->
     <!-- white keys -->
-    <audio data-key="81" src="./piano_sounds/1 203479__tesabob2001__c3.mp3"></audio>
-    <audio data-key="87" src="./piano_sounds/2 203486__tesabob2001__d3.mp3"></audio>
-    <audio data-key="69" src="./piano_sounds/3 203470__tesabob2001__e3.mp3"></audio>
-    <audio data-key="82" src="./piano_sounds/4 203468__tesabob2001__f3.mp3"></audio>
-    <audio data-key="84" src="./piano_sounds/5 203493__tesabob2001__g3.mp3"></audio>
-    <audio data-key="89" src="./piano_sounds/6 203458__tesabob2001__a3.mp3"></audio>
-    <audio data-key="85" src="./piano_sounds/7 203463__tesabob2001__b3.mp3"></audio>
-    <audio data-key="73" src="./piano_sounds/8 203478__tesabob2001__c4-middle-c.mp3"></audio>
-    <audio data-key="79" src="./piano_sounds/9 203472__tesabob2001__d4.mp3"></audio>
-    <audio data-key="80" src="./piano_sounds/10 203471__tesabob2001__e4.mp3"></audio>
-
-    <!-- missing f4 key -->
-    <audio data-key="90" src="./piano_sounds/"></audio> 
-
-    <audio data-key="88" src="./piano_sounds/12 203492__tesabob2001__g4.mp3"></audio>
-    <audio data-key="67" src="./piano_sounds/13 203465__tesabob2001__a4.mp3"></audio>
-    <audio data-key="86" src="./piano_sounds/14 203462__tesabob2001__b4.mp3"></audio>
-    <audio data-key="66" src="./piano_sounds/15 203485__tesabob2001__c5.mp3"></audio>
-    <audio data-key="77" src="./piano_sounds/16 203473__tesabob2001__d5.mp3"></audio>
-    <audio data-key="78" src="./piano_sounds/17 203476__tesabob2001__e5.mp3"></audio>
-    <audio data-key="188" src="./piano_sounds/18 203489__tesabob2001__f5.mp3"></audio>
-    <audio data-key="190" src="./piano_sounds/19 203495__tesabob2001__g5.mp3"></audio>
-    <audio data-key="191" src="./piano_sounds/20 203464__tesabob2001__a5.mp3"></audio>
+    <audio data-key="KeyQ" src="./piano_sounds/1 203479__tesabob2001__c3.mp3"></audio>
+    <audio data-key="KeyW" src="./piano_sounds/2 203486__tesabob2001__d3.mp3"></audio>
+    <audio data-key="KeyE" src="./piano_sounds/3 203470__tesabob2001__e3.mp3"></audio>
+    <audio data-key="KeyR" src="./piano_sounds/4 203468__tesabob2001__f3.mp3"></audio>
+    <audio data-key="KeyT" src="./piano_sounds/5 203493__tesabob2001__g3.mp3"></audio>
+    <audio data-key="KeyY" src="./piano_sounds/6 203458__tesabob2001__a3.mp3"></audio>
+    <audio data-key="KeyU" src="./piano_sounds/7 203463__tesabob2001__b3.mp3"></audio>
+    <audio data-key="KeyI" src="./piano_sounds/8 203478__tesabob2001__c4-middle-c.mp3"></audio>
+    <audio data-key="KeyO" src="./piano_sounds/9 203472__tesabob2001__d4.mp3"></audio>
+    <audio data-key="KeyP" src="./piano_sounds/10 203471__tesabob2001__e4.mp3"></audio>
+    <audio data-key="KeyZ" src="./piano_sounds/11 F4 key.m4a"></audio> 
+    <audio data-key="KeyX" src="./piano_sounds/12 203492__tesabob2001__g4.mp3"></audio>
+    <audio data-key="KeyC" src="./piano_sounds/13 203465__tesabob2001__a4.mp3"></audio>
+    <audio data-key="KeyV" src="./piano_sounds/14 203462__tesabob2001__b4.mp3"></audio>
+    <audio data-key="KeyB" src="./piano_sounds/15 203485__tesabob2001__c5.mp3"></audio>
+    <audio data-key="KeyN" src="./piano_sounds/16 203473__tesabob2001__d5.mp3"></audio>
+    <audio data-key="KeyM" src="./piano_sounds/17 203476__tesabob2001__e5.mp3"></audio>
+    <audio data-key="Comma" src="./piano_sounds/18 203489__tesabob2001__f5.mp3"></audio>
+    <audio data-key="Period" src="./piano_sounds/19 203495__tesabob2001__g5.mp3"></audio>
+    <audio data-key="Slash" src="./piano_sounds/20 203464__tesabob2001__a5.mp3"></audio>
+    
+    <!-- black keys -->
+    <audio data-key="Digit2" src="./piano_sounds/1.1 203466__tesabob2001__c-3.mp3"></audio>
+    <audio data-key="Digit3" src="./piano_sounds/2.1 203483__tesabob2001__d-3.mp3"></audio>
+    <audio data-key="Digit5" src="./piano_sounds/4.1 203501__tesabob2001__f-3.mp3"></audio>
+    <audio data-key="Digit6" src="./piano_sounds/5.1 203488__tesabob2001__g-3.mp3"></audio>
+    <audio data-key="Digit7" src="./piano_sounds/6.1 203502__tesabob2001__a-3.mp3"></audio>
+    <audio data-key="Digit9" src="./piano_sounds/8.1 203481__tesabob2001__c-4.mp3"></audio>
+    <audio data-key="Digit0" src="./piano_sounds/9.1 203482__tesabob2001__d-4.mp3"></audio>
+    <audio data-key="KeyS" src="./piano_sounds/11.1 203500__tesabob2001__f-4.mp3"></audio>
+    <audio data-key="KeyD" src="./piano_sounds/12.1 203491__tesabob2001__g-4.mp3"></audio>
+    <audio data-key="KeyF" src="./piano_sounds/13.1 203460__tesabob2001__a-4.mp3"></audio>
+    <audio data-key="KeyH" src="./piano_sounds/15.1 203480__tesabob2001__c-5.mp3"></audio>
+    <audio data-key="KeyJ" src="./piano_sounds/16.1 203487__tesabob2001__d-5.mp3"></audio>
+    <audio data-key="KeyL" src="./piano_sounds/18.1 203499__tesabob2001__f-5.mp3"></audio>
+    <audio data-key="Semicolon" src="./piano_sounds/19.1 203490__tesabob2001__g-5.mp3"></audio>
+    <audio data-key="Quote" src="./piano_sounds/20.1 203459__tesabob2001__a-5.mp3"></audio>
 
     <script src="index.js"></script>
 </body>
