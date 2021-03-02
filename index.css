@@ -37,9 +37,7 @@ div.white-key{
 }
 
 .white-hover{
-    background-color: green;
-    border: purple 3px solid;
-    transform: scale(1.3);
+    
 }
 
 div.black-key{
@@ -49,6 +47,22 @@ div.black-key{
     position: absolute;
     right: -10px;
     top: 0;
+}
+
+a.white-key{
+    font-size: 20px;
+    position: absolute;
+    top : 30px;
+    left: 12px;
+}
+
+a.black-key{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top : 10px;
+    left: 8px;
+
 }
 
 p.key{
