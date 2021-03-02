@@ -1,16 +1,26 @@
-const whitekeys = document.querySelectorAll(".whitekey")
-const C3 = document.getElementById("C3")
+const whitekeys = document.querySelectorAll(".white-key")
+const blackkeys = document.querySelectorAll(".black-key")
 
-
-
-C3.addEventListener("mouseover",(e)=>{
-    console.log(e)
-    C3.classList.add("white-hover")
-})
-
-function removeTransition(e){
-    console.log(e)
+function removeTransition (e) {
+    console.log(e.propertyName)
+    if (e.propertyName!=="background-color") return;
+    this.classList.remove("playing")
 }
 
-whitekeys.forEach(key=>key.addEventListener("transitionend",removeTransition(e)
-))
+function playAudio(e){
+    const audio = document.querySelector(`audio[data-key="${e.code}"]`)
+    const key = document.querySelector(`div[data-key="${e.code}"]`)
+    if (!audio) return;
+
+    //rewind to start
+    audio.currentTime = 0
+    audio.play()
+
+    key.classList.add("playing")
+
+}
+
+window.addEventListener('keydown', playAudio)
+
+whitekeys.forEach(key=> key.addEventListener('transitionend', removeTransition))
+blackkeys.forEach(key=> key.addEventListener('transitionend', removeTransition))
